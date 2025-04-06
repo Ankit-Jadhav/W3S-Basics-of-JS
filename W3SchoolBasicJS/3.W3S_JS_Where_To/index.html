@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_Where_To</title>
+    
+    <!-- JS in head section -->
+    <script> 
+    function changeHeadParagraph() {
+        document.getElementById("headScript").innerHTML = "Paragraph changed from head script.";
+    }
+    </script>
+</head>
+<body>
+    <h2> JavaScript in head section</h2>
+    <p id = "headScript">This is a paragraph in the head section. </p>
+    <button type="button" onclick="changeHeadParagraph()">Change Head Paragraph </button>
+
+
+
+
+    <!-- JS in body section -->
+    <h2> JavaScript in Body</h2>
+    <p id="bodyScript">This is a paragraph in the body section.</p>
+    <button type="button" onclick="changeBodyParagraph()"> Change Body Paragraph </button>
+
+    <script> 
+    function changeBodyParagraph() { document.getElementById("bodyScript").innerHTML = "Paragraph changed from body script."; }
+    // In HTML, JavaScript code is inserted between script tag.
+    </script>
+
+    <!-- Js In External file -->
+    <h2>Demo External JavaScript</h2>
+    <p id="externalJS"> A paragraph.</p>
+    <button type="button" onclick="externalJSFile()">Try it</button>
+    <p>This example links to "first.js".</p>
+    <p>(myFunction is stored in "first.js")</p>
+    <script src="first.js"></script>
+
+
+    
+</body>
+</html>
